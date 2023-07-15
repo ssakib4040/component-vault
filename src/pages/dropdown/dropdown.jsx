@@ -4,6 +4,7 @@ import "./dropdown.scss";
 export default function Dropdown() {
   return (
     <div>
+      <h3>Dropdown</h3>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
         laudantium repellat assumenda necessitatibus magnam facere rerum

@@ -3,6 +3,8 @@ import "./Sidebar.scss";
 export default function Sidebar() {
   return (
     <div className="sidebar open dev">
+      <h3>Content</h3>
+
       <ul>
         <li>
           <a href="/">Home</a>

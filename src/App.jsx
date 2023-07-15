@@ -36,7 +36,7 @@ export function App() {
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h3>Home</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, optio
         veniam esse inventore non necessitatibus architecto minus. Voluptas,
@@ -163,7 +163,7 @@ function About() {
 function NoMatch() {
   return (
     <div>
-      <h2>Nothing to see here!</h2>
+      <h3>Nothing to see here!</h3>
       <p>
         <Link to="/">Go to the home page</Link>
       </p>

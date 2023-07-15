@@ -2,13 +2,31 @@
   background-color: #fdfbfb;
   width: 300px;
   height: 100vh;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
   position: fixed;
-  top: 59.18px; // 59.18
+  top: 65.29px; // 55.29
   left: -400px;
   transition: left 0.3s ease;
+  border-right: 1px solid #ddd;
 
   &.open {
     left: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    }
   }
 }
 
