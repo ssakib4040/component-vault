@@ -3,14 +3,10 @@ import { Routes, Route, Link, Outlet } from "react-router-dom";
 export function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/">
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="dashboard" element={<Dashboard />} />
 
-        {/* Using path="*"" means "match anything", so this route
-            acts like a catch-all for URLs that we don't have explicit
-            routes for. */}
         <Route path="*" element={<NoMatch />} />
       </Route>
     </Routes>
@@ -41,9 +37,6 @@ function Layout() {
 
       <hr />
 
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
       <Outlet />
     </div>
   );
@@ -61,14 +54,6 @@ function About() {
   return (
     <div>
       <h2>About</h2>
-    </div>
-  );
-}
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
     </div>
   );
 }
