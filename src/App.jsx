@@ -8,8 +8,8 @@ import Content from "./components/Content/Content";
 
 // pages
 import Home from "./pages/Home/Home";
-import Dropdown from "./pages/Dropdown/Dropdown";
 import NoMatch from "./pages/NoMatch/NoMatch";
+import Dropdown from "./pages/Dropdown/Dropdown";
 
 export function App() {
   return (
