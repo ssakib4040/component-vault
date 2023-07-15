@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <nav>
         <a href="/" class="logo">
-          My Website
+          Component Vault
         </a>
 
         <a
