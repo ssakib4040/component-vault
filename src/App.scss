@@ -1,9 +1,4 @@
 .container {
   position: relative;
-  height: calc(100vh - 59.18px); // 59.18
-
-  .content {
-    margin-left: 300px;
-    overflow-y: auto;
-  }
+  height: calc(100vh - 59.18px);
 }
