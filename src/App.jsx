@@ -1,44 +1,26 @@
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+
+// components
+import Header from "./components/Header/Header";
+
+// pages
+import Dropdown from "./pages/dropdown/Dropdown";
 
 export function App() {
   return (
-    <Routes>
-      <Route path="/">
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
+    <>
+      <Header />
 
-        <Route path="*" element={<NoMatch />} />
-      </Route>
-    </Routes>
-  );
-}
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
 
-function Layout() {
-  return (
-    <div>
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/nothing-here">Nothing Here</Link>
-          </li>
-        </ul>
-      </nav>
+          <Route path="dropdown.html" element={<Dropdown />} />
 
-      <hr />
-
-      <Outlet />
-    </div>
+          <Route path="*" element={<NoMatch />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
