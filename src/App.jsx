@@ -4,7 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 
 // pages
-import Dropdown from "./pages/dropdown/Dropdown";
+import Dropdown from "./pages/dropdown/dropdown";
 
 export function App() {
   return (
