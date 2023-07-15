@@ -1,40 +1,40 @@
 header {
   padding: 20px;
+  background: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-/* Add CSS styles for the navigation links */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    li {
-      margin-right: 20px;
-    }
-  }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
 
-  .logo {
-    font-weight: bold;
-    color: #000;
-    text-decoration: none;
-  }
-
-  @media (max-width: 768px) {
-    nav ul {
-      display: none;
+      li {
+        margin-right: 20px;
+      }
     }
 
-    .menu-toggle {
-      display: block;
+    .logo {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
     }
   }
 }
