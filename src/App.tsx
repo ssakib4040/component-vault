@@ -11,15 +11,19 @@ export default function App() {
     <div>
       <Header />
 
+      <div className="container">
+        {/* Sidebar & Content */}
+
+        <div className="sidebar dev">Sidebar</div>
+        <div className="content dev">Content</div>
+      </div>
+
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/">
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard />} />
 
-          {/* Using path="*"" means "match anything", so this route
-              acts like a catch-all for URLs that we don't have explicit
-              routes for. */}
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
