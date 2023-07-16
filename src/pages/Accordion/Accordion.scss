@@ -1,0 +1,23 @@
+.accordion {
+  width: 100%;
+  .accordion-item {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    transition: 0.4s;
+
+    &.active,
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  .accordion-panel {
+    padding: 0 1rem;
+    display: none;
+    background: white;
+    overflow: hidden;
+  }
+}
