@@ -1,10 +1,13 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.scss";
 
 // components
 import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Content from "./components/Content/Content";
 
 // pages
+import Accordion from "./pages/Accordion/Accordion";
 
 export default function App() {
   return (
@@ -12,281 +15,19 @@ export default function App() {
       <Header />
 
       <div className="container">
-        {/* Sidebar & Content */}
+        <Sidebar />
 
-        <div className="sidebar dev">
-          <ul>
-            <li>
-              <a href="">Items number 1</a>
-            </li>
+        <Content>
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path="accordion" element={<Accordion />} />
 
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-
-            <li>
-              <a href="">Items number 1</a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="content dev">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            deleniti accusantium sint recusandae aut, nulla quod, earum
-            reiciendis temporibus error rem amet, voluptate ipsa obcaecati
-            asperiores dolor veniam voluptas illum.
-          </p>
-        </div>
+              <Route path="*" element={<NoMatch />} />
+            </Route>
+          </Routes>
+        </Content>
       </div>
-
-      {/* <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
-
-          <Route path="*" element={<NoMatch />} />
-        </Route>
-      </Routes> */}
     </div>
   );
 }
